@@ -51,6 +51,7 @@ class AddDoctor extends Component {
                 loading: false
             })
             console.log(this.state);
+            // window.alert(this.state.loading)
         }else{
             this.setState({
                 loading: true
@@ -72,6 +73,7 @@ class AddDoctor extends Component {
                 </div>
             )
         }) 
+        // window.alert(this.state.loading)
         if(this.state.loading === false){
             return(
                 <div className="container">

@@ -29,7 +29,7 @@ class Upload extends Component {
     }
     
     onSubmit = (e) => {
-        console.log('here')
+        // console.log('here')
         var temp = this;
         e.preventDefault();
         const data = new FormData(); 
@@ -43,6 +43,7 @@ class Upload extends Component {
     }
     
     addFileToPatient() {
+        console.log('here')
         console.log(this.state);
         this.setState({ loading: true })
         var today = new Date();

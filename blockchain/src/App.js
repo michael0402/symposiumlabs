@@ -55,8 +55,11 @@ class App extends Component {
         const networkId = await web3.eth.net.getId()
         const networkData = Patient.networks[networkId]
         if(networkData) {
+            // window.alert(web3.eth.Contract(Patient.abi, networkData.address))
             const patient = new web3.eth.Contract(Patient.abi, networkData.address)
             this.setState({ 'patient': patient, 'loading': false })
+            // window.alert(this.state.patient.abi.payable)
+            
         } else {
             window.alert('Patient contract not deployed to detected network.')
         }
