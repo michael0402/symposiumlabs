@@ -99,7 +99,7 @@ class AddDoctor extends Component {
                             <input type="text" id="name" name="name" onChange={this.handleInputChange} required/>
                             <label htmlFor="name">Name</label><br></br>
                             <input type="text" id="docAccount" name="docAccount" onChange={this.handleInputChange} required/>
-                            <label htmlFor="name">Doctor's Account</label><br></br><br></br>
+                            <label htmlFor="name">Collaborator's Account</label><br></br><br></br>
                             <button className="btn blue darken-2" type="submit" name="action">Add
                                 <i className="material-icons right">person_add</i>
                             </button>
