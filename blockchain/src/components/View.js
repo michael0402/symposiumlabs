@@ -64,7 +64,7 @@ class View extends Component {
                     <br></br>
                     <ul className="collection">
                         <li className="collection-item avatar">
-                            <h3>Uploaded Medical Documents</h3>
+                            <h3>Uploaded Research Papers</h3>
                         </li>
                             {fileList}
                     </ul>

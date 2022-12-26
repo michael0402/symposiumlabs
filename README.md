@@ -1,43 +1,43 @@
-# Medi-Care <img src="https://pbs.twimg.com/profile_images/653586573/Logo_wc-2_400x400.png" height="30px" width="30px"/>
+# Symposium Labs
 
-A decentralized web application using ReactJS, Flask, Solidity, IPFS and the Ethereum Blockchain to store and view all medical documents securely.
+A decentralized web application using ReactJS, Flask, Solidity, IPFS and the Ethereum Blockchain to store and view all research papers securely.
 
 ## About the D-App
 
 <b>The app has 2 main users:</b>
-1. Patient
-2. Doctor <i>(in development)</i>
+1. Researcher
+2. Collaborators <i>(in development)</i>
 
-<b>Patients can:</b>
+<b>Researchers can:</b>
 <ol>
 <li> Upload a document to the blockchain. The document is added as a node in IPFS which returns a hash. The hash is then stored on the blockchain</li>
 <li> View the uploaded documents.</li>
-<li> Analyse the uploaded documents. The text from the document is extracted and <b>NER</b>(Named Entity Recognition) is performed on the text using <b>BERN</b>(Biomedical Entity Recognition and multi-type Normalization tool.)</li>
-<li> Analyse their reports to find keywords related to <b>Drugs</b> or <b>Diseases</b>.</li>
-<li> Add a trusted doctor to view their medical documents.</li>
+<li> Analyse the uploaded documents. The text from the document is extracted and <b>NER</b>(Named Entity Recognition) is performed on the text
+<li> Analyse their reports to find keywords
+<li> Add a trusted researcher to view their research documents.</li>
 </ol>
 
-<b>Doctors can:</b>
+<b>Collaborators can:</b>
 <ol>
-<li> Upload a medical document about a certain patient to the blockchain.</li>
-<li> View a certain patient's uploaded document.</li>
+<li> Upload a research document for a certain researcher to the blockchain.</li>
+<li> View a certain researchers's uploaded document.</li>
 </ol>
 
 ## System Architecture
 
-<img src="https://i.ibb.co/1rnDfbN/Sherwyn.png" alt="System Architecture" border="0"><br />
+TO DO
 
 | Number      | Description |
 | ----------- | ----------- |
-| 1           | User scans and uploads a medical record.       |
+| 1           | Researcher scans and uploads a research record.       |
 | 2      | The record is then encrypted from the client side and sent to the Flask Server.        |
 | 3, 4           | The Flask server sends this encrypted file to the IPFS network for storage. Once stored, it returs back a file hash.       |
 | 5       | The file hash is then returned back to the client app.        |
 | 6        | The hash is then stored securely on the Ethereum Blockchain        |
-| 7          | The user can then choose to perform NER(Named-Entity-Recognition) on the data in the medical record. This is the make the user aware about the complex terms and data in the report. The record is sent to the Flask server.       |
-| 8, 9        | The Flask server runs the BERN model on the recieved data after performing OCR on the report to get the text from the scanned medical record PDF. The medical keywords are then passed back to the Flask server.        |
+| 7          | The user can then choose to perform NER(Named-Entity-Recognition) on the data in the research paper. This is the make the user aware about the complex terms and data in the report. The record is sent to the Flask server.       |
+| 8, 9        | The Flask server runs performs OCR on the report to get the text from the scanned research paper. The conevrted research paper is then passed back to the Flask server.        |
 | 10 | The Flask server sends this data back to the client app and the client can view the keywords and click on it for more information |
-| 11           | The doctor can view the medical record(s) of <b>ONLY his/her</b> patient.      |
+| 11           | The collaborators can view the research papers record(s) of <b>ONLY his/her</b> collaborator.      |
 
 ## About the Ethereum Blockchain
 
@@ -69,7 +69,7 @@ The <b>InterPlanetary File System</b> is a protocol and peer-to-peer network for
 
 ### Clone the repository
 ```bash
-git clone https://github.com/sherwyn11/Medi-Care.git
+git clone https://github.com/michael0402/symposiumlabs.git
 ```
 
 ### To run React development server
@@ -89,18 +89,4 @@ python app.py
 ```
 ## Working Demonstration
 
-![](Readme_requirements/Medi-Care.gif)
-
-(This project is still under development)
-
-## References
-
-<a href="https://www.devteam.space/blog/how-can-blockchain-keep-medical-records-secure/">How Can Blockchain Keep Medical Records Secure?</a>
-
-## License
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-[MIT License Link](https://github.com/sherwyn11/Medi-Care/blob/master/LICENSE)
-
-&copy; 2020 Sherwyn D'souza
+TO DO

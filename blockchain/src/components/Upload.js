@@ -67,7 +67,7 @@ class Upload extends Component {
                 <br></br>
                 <form onSubmit={this.onSubmit} encType="multipart/form-data">
                     <input type="file" id="file" name="file" onChange={this.captureFile} required/>
-                    <label htmlFor="file">Upload Medical Document</label><br></br>
+                    <label htmlFor="file">Upload Research Paper</label><br></br>
                     <input type="text" id="fname" name="fname" onChange={this.handleInputChange} required/>
                     <label htmlFor="fname">Name</label><br></br><br></br>
                     <button className="btn blue darken-2" type="submit" name="action">Upload

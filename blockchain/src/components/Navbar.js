@@ -48,7 +48,7 @@ class Navbar extends Component {
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/upload">Upload</NavLink></li>
                             <li><NavLink to="/view">View</NavLink></li>
-                            <li><NavLink to="/doctors">Doctors</NavLink></li>
+                            <li><NavLink to="/doctors">Collaborators</NavLink></li>
                             <li>
                             { this.props.account
                                 ? <img

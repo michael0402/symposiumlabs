@@ -81,7 +81,7 @@ class AddDoctor extends Component {
                     <div className="container">
                         <ul className="collection">
                             <li className="collection-item avatar">
-                                <h3>My Doctors</h3>
+                                <h3>My Collaborators</h3>
                             </li>
                                 {docList}
                         </ul>
@@ -94,7 +94,7 @@ class AddDoctor extends Component {
                     </div>
 
                     <div className="container">
-                    <h3>Add a Trusted Doctor</h3>
+                    <h3>Add a Trusted Collaborator</h3>
                         <form onSubmit={this.handleSubmit}>
                             <input type="text" id="name" name="name" onChange={this.handleInputChange} required/>
                             <label htmlFor="name">Name</label><br></br>
