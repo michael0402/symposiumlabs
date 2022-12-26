@@ -20,7 +20,7 @@ class Navbar extends Component {
             return ( 
                 <nav className="nav-wrapper red darken-3">
                     <div className="container">
-                        <a href="#" className="brand-logo center"><i style={{marginTop: 5}} className="material-icons"></i>Medi-Care</a>
+                        <a href="#" className="brand-logo center">Symposium Labs</a>
                         <ul className="right hide-on-med-and-down">
                             <li>
                             { this.props.account
@@ -43,7 +43,7 @@ class Navbar extends Component {
             return(
                 <nav className="nav-wrapper red darken-3">
                     <div className="container">
-                    <a href="#" className="brand-logo"><i style={{marginTop: 5}} className="material-icons">local_hospital</i>Medi-Care</a>
+                    <a href="#" className="brand-logo">Symposium Labs</a>
                         <ul className="right hide-on-med-and-down">
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/upload">Upload</NavLink></li>
