@@ -25,7 +25,7 @@ A decentralized web application using ReactJS, Flask, Solidity, IPFS and the Eth
 
 ## System Architecture
 
-TO DO
+<img src="/Readme_requirements/ProductArchitecture.jpg" alt="System Architecture" border="0"><br />
 
 | Number      | Description |
 | ----------- | ----------- |
